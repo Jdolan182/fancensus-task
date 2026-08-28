@@ -1,7 +1,5 @@
 After cloning branch
 
-I has WSL 2 setup and was using that
-
 composer install 
 npm install
 
