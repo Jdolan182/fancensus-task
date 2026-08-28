@@ -9,7 +9,7 @@
     </head>
     <body class="h-full">
         <div class="min-h-full bg-gray-50 dark:bg-gray-900">
-            <div class="mx-auto max-w-2xl px-4 py-12 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h1 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
                         YouTube JSON Reader
@@ -19,7 +19,7 @@
                     </p>
                 </div>
 
-                <div class="mt-8 rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-900/5 sm:p-8 dark:bg-white/5 dark:ring-white/10">
+                <div class="mx-auto mt-8 max-w-xl rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-900/5 sm:p-8 dark:bg-white/5 dark:ring-white/10">
                     <form id="youtubeForm">
                         <div>
                             <label for="videoID" class="block text-sm/6 font-medium text-gray-900 dark:text-white">
@@ -45,11 +45,23 @@
                         Details
                     </h2>
                     <div id="videoResult" class="mt-4 space-y-2 text-sm text-gray-700 dark:text-gray-300">
-                        
+                        <table class="w-full text-left">
+                            <thead class="bg-white dark:bg-gray-900">
+                                <tr>
+                                    <th scope="col" class="relative isolate py-3.5 pr-3 text-left text-sm font-semibold text-gray-900 dark:text-white">
+                                        Key
+                                    </th>
+                                    <th scope="col" class="relative isolate py-3.5 pr-3 text-left text-sm font-semibold text-gray-900 dark:text-white">
+                                        Value
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="video-result-body">
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </body>
-
 </html>

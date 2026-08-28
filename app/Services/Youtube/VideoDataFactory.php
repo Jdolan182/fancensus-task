@@ -35,7 +35,7 @@ class VideoDataFactory
 
         return new VideoData(
             videoId: $item['id'],
-            publishedAt: $publishedAt->toDateTimeString(),
+            publishedAt: $publishedAt->format('M j, Y g:ia'), 
             title: $snippet['title'],
             lengthSeconds: $duration['seconds'],
             lengthFormatted: $duration['formatted'],
